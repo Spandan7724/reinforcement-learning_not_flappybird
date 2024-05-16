@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+}
+
+.canvas {
+    background-color: #eee;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #999;
+}
+
+.results {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.results h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.counterTitle {
+    color: rgb(250, 250, 255);
+}
+
+.game-value {
+    color: rgb(255, 255, 255);
+}
+
+.results p {
+    margin-bottom: 10px;
+}
+
+.results p span {
+    font-weight: bold;
+}

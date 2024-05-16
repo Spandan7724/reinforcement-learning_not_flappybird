@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Flappy Bird with Reinforcement Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Not Flappy Bird with Reinforcement Learning</h1>
+        <canvas id="flappyCanvas" width="320" height="480" class="canvas"></canvas>
+
+        <div id="results" class="results">
+            <h2>Reinforcement Learning Results</h2>
+            <p><strong>State:</strong> <span id="currentState"></span></p>
+            <p><strong>Last Action:</strong> <span id="lastAction"></span></p>
+            <p><strong>Last Reward:</strong> <span id="lastReward"></span></p>
+        </div>
+
+        <div id="gameCounter">
+            <h2 class="counterTitle">Games Played:</h2>
+            <p><strong></strong> <span id="gamesPlayed" class="game-value">0</span></p>
+        </div>
+
+        <div id="pointCounter">
+            <h2 class="counterTitle">Points Earned at Game number:</h2>
+            <p><strong></strong> <span id="pointsEarned" class="game-value"></span></p>
+        </div> 
+
+        <script src="rl.js"></script>
+
+</body>
+
+</html>
