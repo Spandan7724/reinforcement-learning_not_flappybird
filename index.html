@@ -25,13 +25,33 @@
             <h2 class="counterTitle">Games Played:</h2>
             <p><strong></strong> <span id="gamesPlayed" class="game-value">0</span></p>
         </div>
-
+<!-- 
         <div id="pointCounter">
             <h2 class="counterTitle">Points Earned at Game number:</h2>
             <p><strong></strong> <span id="pointsEarned" class="game-value"></span></p>
-        </div> 
+        </div>
+-->
+    
+    <!-- control switch for user playable or not
+          
+        <div id="controlSwitch" class="controlSwitch">
+            <label for="modeSwitch" class="controlLabel">User Control:</label>
+            <div class="toggle-switch">
+                <input type="checkbox" id="modeSwitch" onchange="toggleMode()">
+                <span class="slider"></span>
+            </div>
+        </div> -->
+        <div id="highScoreContainer"> <!-- Unique ID for the container div -->
+            <h2 class="counterTitle">High Score:</h2>
+            <p><strong></strong> <span id="highScoreValue" class="game-value">0</span></p> <!-- Unique ID for the span -->
+        </div>
+
+
+        
+
 
         <script src="rl.js"></script>
+    </div>
 
 </body>
 

@@ -21,7 +21,7 @@ var pipeWidth = 30;
 var pipeColor = "#3CC128";
 var gapSizeDef = 150;
 var gapStartPoint = 200;
-
+var highScore = 0;
 // Reinforcement Learning variables
 var env, lv_state = [], lv_action, lv_reward, lv_score = 0, lv_init = 'X', Q_table = {};
 var f = 0;
@@ -182,6 +182,28 @@ function drawScore() {
         ctx.fillText("You lost.", canvas.width / 2, canvas.height / 2 - 50);
         ctx.fillText("Press any key to try again.", canvas.width / 2, canvas.height / 2);
     }
+}
+
+// Function to update the high score
+// Function to update the high score
+function updateHighScore() {
+    if (score > highScore) {
+        highScore = score;
+    }
+    document.getElementById("highScoreValue").textContent = highScore; // Update the high score value
+}
+
+
+// Function to reset the high score
+function resetHighScore() {
+    highScore = 0;
+    updateHighScore();
+}
+
+// Game over
+function fail() {
+    started = false;
+    updateHighScore(); // Update high score when game ends
 }
 
 // Utility function to calculate distance between a point and a rectangle
